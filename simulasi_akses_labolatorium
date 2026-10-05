@@ -1,0 +1,19 @@
+def cek_akses_lab(mahasiswa_terdaftar, kartu_aktif, laboratorium_buka):
+    """
+    Fungsi untuk mensimulasikan akses ke laboratorium berdasarkan 3 syarat utama.
+    """
+    if mahasiswa_terdaftar and kartu_aktif and laboratorium_buka:
+        return "Akses laboratorium diberikan."
+    else:
+        return "Akses laboratorium ditolak."
+
+
+if __name__ == '_main_':
+    # Mengambil input dari pengguna (opsional)
+    print("--- Simulasi Akses Lab ---")
+    mhs = input("Apakah mahasiswa terdaftar? (y/n): ").lower() == 'y'
+    kartu = input("Apakah kartu aktif? (y/n): ").lower() == 'y'
+    lab = input("Apakah laboratorium buka? (y/n): ").lower() == 'y'
+    
+    hasil = cek_akses_lab(mhs, kartu, lab)
+    print(f"Hasil: {hasil}")
