@@ -1,0 +1,5 @@
+kehadiran = 90
+admistrasi_lunas = True
+kelayan_ujian = kehadiran >= 75 and admistrasi_lunas
+
+print ("mahasiswa layak mengikuti ujian :", kelayan_ujian)
